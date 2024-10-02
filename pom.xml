@@ -43,7 +43,7 @@
 	</dependencies>
 
 	<build>
-	<finalName>springboot-application</finalName>
+	<finalName>springboot-jenkins-docker-kubernate</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
