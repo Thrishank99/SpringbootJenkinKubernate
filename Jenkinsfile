@@ -24,6 +24,14 @@ pipeline {
                   bat 'docker push thrishank99/springboot-jenkins-docker-kubernate'
                 }
             }
-        }  
+        }
+      stage('Deploy to k8s'){
+		steps{
+			script{
+				kubernetesDeploy (configs: 'deploymentservice.yaml',kubeconfigId: 'kubeconfig')
+			}
+		}
+	  }
+         
    }
 }
